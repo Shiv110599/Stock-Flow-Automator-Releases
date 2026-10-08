@@ -5,5 +5,8 @@
   "status": "not-published",
   "latest_version": "3.4.8",
   "download_url": "https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases",
-  "release_notes": "No newer approved Production release is published. Existing v3.4.8 installations remain current."
+  "release_notes": "Production v3.4.11 is recorded. No approved installer is published; automatic updates are not available yet.",
+  "current_production_version": "3.4.11",
+  "binary_available": false,
+  "production_record": "https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases/tag/record-production-v3.4.11"
 }

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "version": "3.4.11",
+  "edition": "production",
+  "recorded_on": "2026-10-08",
+  "status": "version-record-only",
+  "previous_production_version": "3.4.8",
+  "binary_available": false,
+  "installer_release": null,
+  "notes": "Current Production version recorded from maintainer-supplied source. No installer was supplied or published with this record. Source, Test editions, backups and business data remain private."
+}
