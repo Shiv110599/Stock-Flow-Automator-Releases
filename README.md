@@ -1,19 +1,22 @@
 # StockFlow Automator — Production downloads
 
-This repository contains **public Production version records and approved installers**. It contains no application source, Test builds, business data or backup versions.
+**Current version: v3.4.11.** Download the full [Windows x64 portable application](https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases/tag/portable-production-v3.4.11). Displayed publisher: **Shivam**. The application is **unsigned**; **automatic installation is disabled**.
 
-**Current Production version record: v3.4.11**, recorded on 2026-10-08. See [the record](records/production-v3.4.11.json) and [record release](https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases/tag/record-production-v3.4.11). No installer was supplied or published with this record. Recording a version does not change installed applications. A first updater-enabled installer will require a one-time installation; subsequent approved versions can display an update notification in the application.
+1. Download `StockFlow-production-3.4.11-windows-x64-portable.zip` from the release and verify its SHA-256 using `SHA256SUMS.txt`.
+2. Close existing copies, suspend scheduled launches and back up the old app folder and settings.
+3. Extract the entire ZIP to a new local folder. Keep `StockFlow Automator.exe` and `_internal` together; read `READ-ME-FIRST.txt`.
+4. Run the new app, verify settings/reports, and update shortcuts and scheduled-task paths. Preserve the old folder for recovery. Existing Production settings and reports are retained.
 
-When a release is available, download its signed `StockFlow-production-<version>-Setup.exe` from [Releases](https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases). Verify the publisher shown by Windows and install using the same Windows account. Updates preserve application settings and reports.
+The download includes pinned runtime dependencies (Pillow 12.3.0). Its packaged self-test and isolated launch checks passed. This repository contains public Production metadata and download assets. Application source trees, Test editions, backup versions, credentials, private build records and business data stay private; required third-party runtime files accompany the EXE.
 
-`channels/production.json` is the Production update feed. Only published, approved Production packages are advertised. Source commits and Test releases do not trigger updates for users. Earlier approved installers remain in Releases for support and controlled recovery.
-
-Update address for the checker's `UPDATE_MANIFEST_URL`:
+## Existing update URL
 
 ```text
 https://raw.githubusercontent.com/Shiv110599/Stock-Flow-Automator-Releases/main/channels/production.json
 ```
 
-The feed supports the existing checker's `latest_version`, `download_url`, and `release_notes` fields. The feed records `current_production_version: 3.4.11` and `status: not-published`. Until a real approved installer exists, compatibility `latest_version` remains v3.4.8 so older clients cannot offer a nonexistent upgrade. Existing EXEs with an empty compiled address need a one-time rebuilt installation to connect.
+The feed lists `latest_version: 3.4.11` and points `download_url` to the manual release page. Compatible older native clients can offer the update and open that page in a browser. It never downloads/executes the standalone EXE as an installer. Apps already on v3.4.11 have no newer version to offer. Old EXEs with no configured URL require this first manual installation.
 
-Metadata-only records use `record-production-vX.Y.Z` tags; downloadable installer releases use `production-vX.Y.Z`. A version record does not reserve or advertise an installer.
+Trusted automatic installation requires a code-signing certificate, a tested signed installer and initial installation of an updater-enabled package. It remains disabled here. Source commits and private Test releases do not deploy anything to users' systems.
+
+The [machine-readable version record](records/production-v3.4.11.json) links the published portable download. Portable tags use `portable-production-vX.Y.Z`; metadata-only tags use `record-production-vX.Y.Z`; future signed installers use `production-vX.Y.Z`. These tags retain separate records without duplicating private backup folders.

@@ -3,9 +3,18 @@
   "version": "3.4.11",
   "edition": "production",
   "recorded_on": "2026-10-08",
-  "status": "version-record-only",
+  "status": "portable-download-available",
   "previous_production_version": "3.4.8",
-  "binary_available": false,
+  "binary_available": true,
   "installer_release": null,
-  "notes": "Current Production version recorded from maintainer-supplied source. No installer was supplied or published with this record. Source, Test editions, backups and business data remain private."
+  "notes": "Production v3.4.11 is available as a complete unsigned portable download. Upgrade is manual. Source, Test editions, backups and business data remain private. Signed automatic installation is pending.",
+  "automatic_installation": false,
+  "publisher_display": "Shivam",
+  "signature": "NotSigned",
+  "portable_release": "https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases/tag/portable-production-v3.4.11",
+  "portable_download": {
+    "url": "https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases/download/portable-production-v3.4.11/StockFlow-production-3.4.11-windows-x64-portable.zip",
+    "sha256": "30543e6deb189867c58cb808e80e38922f8db2030ec67929bacf6783b9a9d4e4",
+    "size_bytes": 37214375
+  }
 }
