@@ -1,0 +1,8 @@
+# Installers belong in Releases, never in the source tree.
+*.exe
+*.zip
+*.dll
+*.pfx
+*.pem
+*.key
+*.log
