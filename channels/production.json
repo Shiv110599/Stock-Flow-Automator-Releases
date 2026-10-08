@@ -2,5 +2,8 @@
   "schema_version": 1,
   "channel": "production",
   "platform": "windows-x64",
-  "status": "not-published"
+  "status": "not-published",
+  "latest_version": "3.4.8",
+  "download_url": "https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases",
+  "release_notes": "No newer approved Production release is published. Existing v3.4.8 installations remain current."
 }

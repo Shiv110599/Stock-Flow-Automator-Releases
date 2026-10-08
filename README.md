@@ -7,3 +7,11 @@ No new installer is published yet. Existing v3.4.8 installations continue to wor
 When a release is available, download its signed `StockFlow-production-<version>-Setup.exe` from [Releases](https://github.com/Shiv110599/Stock-Flow-Automator-Releases/releases). Verify the publisher shown by Windows and install using the same Windows account. Updates preserve application settings and reports.
 
 `channels/production.json` is the Production update feed. Only published, approved Production packages are advertised. Source commits and Test releases do not trigger updates for users. Earlier approved installers remain in Releases for support and controlled recovery.
+
+Update address for the checker's `UPDATE_MANIFEST_URL`:
+
+```text
+https://raw.githubusercontent.com/Shiv110599/Stock-Flow-Automator-Releases/main/channels/production.json
+```
+
+The feed supports the existing checker's `latest_version`, `download_url`, and `release_notes` fields. Until a newer approved package is published, it reports v3.4.8 and links to the download page without offering an upgrade. Existing EXEs with an empty compiled address need a one-time rebuilt installation to connect.
